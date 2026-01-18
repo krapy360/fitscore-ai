@@ -1,0 +1,137 @@
+/* Global reset & base styles */
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: #f5f7fb;
+  color: #1f2937;
+}
+
+/* App container */
+.app {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.header p {
+  margin-top: 8px;
+  font-size: 15px;
+  color: #6b7280;
+}
+
+/* Main card */
+.card {
+  background-color: #ffffff;
+  padding: 24px;
+  border-radius: 14px;
+  margin-bottom: 28px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+.card h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* Inputs */
+input[type="file"] {
+  margin-bottom: 12px;
+}
+
+textarea {
+  width: 100%;
+  min-height: 120px;
+  padding: 12px;
+  margin: 8px 0 20px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  resize: vertical;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #4f46e5;
+}
+
+/* Hint text */
+.hint {
+  font-size: 12px;
+  color: #6b7280;
+  margin-bottom: 8px;
+}
+
+/* Button */
+button {
+  background-color: #4f46e5;
+  color: #ffffff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #4338ca;
+}
+
+button:disabled {
+  background-color: #9ca3af;
+  cursor: not-allowed;
+}
+
+/* Result card */
+.result-card {
+  background-color: #ffffff;
+  padding: 24px;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+.result-card h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* Preserve AI / ATS formatting */
+pre {
+  white-space: pre-wrap;
+  line-height: 1.6;
+  font-size: 14px;
+  background-color: #f9fafb;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .app {
+    padding: 16px;
+  }
+
+  .header h1 {
+    font-size: 26px;
+  }
+}
