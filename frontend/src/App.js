@@ -123,6 +123,8 @@ function App() {
           </AnimatePresence>
         </div>
       </motion.div>
+
+      <footer className="footer">Made on Earth by Deep ♥</footer>
     </div>
   );
 }
