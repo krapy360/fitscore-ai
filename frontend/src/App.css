@@ -183,14 +183,37 @@ body {
 }
 
 .result {
-  white-space: pre-wrap;
   margin: 0;
   padding: 12px;
   border: 1px solid var(--border);
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.28), rgba(0, 0, 0, 0.18));
+  border-left: 3px solid var(--accent);
+}
+
+.resultMarkdown {
+  white-space: pre-wrap;
   line-height: 1.6;
   font-size: 13px;
-  border-left: 3px solid var(--accent);
+}
+
+.resultMarkdown h2,
+.resultMarkdown h3,
+.resultMarkdown h4 {
+  font-size: 14px;
+  margin: 8px 0 4px;
+}
+
+.resultMarkdown p {
+  margin: 4px 0;
+}
+
+.resultMarkdown ul {
+  margin: 4px 0 4px 18px;
+  padding: 0;
+}
+
+.resultMarkdown li {
+  margin: 2px 0;
 }
 
 .footer {

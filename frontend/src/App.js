@@ -3,6 +3,7 @@ import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import "./App.css";
 import Header from "./components/Header";
 import UploadCard from "./components/UploadCard";
+import ResultView from "./components/ResultView";
 
 function App() {
   const [resumeFile, setResumeFile] = useState(null);
@@ -50,6 +51,7 @@ function App() {
 
   return (
     <div className="appShell">
+      <div className="pixel-layer" aria-hidden />
       <Header />
 
       <motion.div
@@ -109,16 +111,15 @@ function App() {
             )}
 
             {result && !loading && (
-              <motion.pre
+              <motion.div
                 key="result"
-                className="result"
                 initial={prefersReducedMotion ? false : { opacity: 0, y: 8 }}
                 animate={prefersReducedMotion ? undefined : { opacity: 1, y: 0 }}
                 exit={prefersReducedMotion ? undefined : { opacity: 0, y: -8 }}
                 transition={{ duration: 0.25 }}
               >
-                {result}
-              </motion.pre>
+                <ResultView text={result} />
+              </motion.div>
             )}
           </AnimatePresence>
         </div>
